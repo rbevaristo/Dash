@@ -1,24 +1,24 @@
 #content-area {
-    margin-left: 280px;
+    margin-left: 80px;
     padding: 15px;
     .heading {
         h1 {
-            color: purple;
+            color: $purple;
             font-size: 1.4rem;
             font-weight: 400;
             margin-bottom: 10px;
         }
         p {
-            color: #1b1b1b;
+            color: $darkGreyFont;
             font-size: 0.8rem;
             margin-bottom: 10px;
         }
     }
     .cards {
-        overflow: auto;
+        overflow: hidden;
         margin-bottom: 30px;
         .card {
-            background: #fff;
+            background: $white;
             border-radius: 5px;
             padding: 20px;
             margin-bottom: 30px;
@@ -35,7 +35,7 @@
             }
             .user-name {
                 font-size: 1rem;
-                color: purple;
+                color: $purple;
                 display: block;
                 text-align: center;
                 margin: 10px 0;
@@ -49,11 +49,10 @@
             .education {
                 font-size: 0.8rem;
                 display: inline-block;
-                color: $purpleDark;
             }
             .schools {
                 font-size: 0.8rem;
-                // display: inline-block;
+                color: $purpleDark;
             }
             h6 {
                 font-size: 0.8rem;
@@ -68,32 +67,73 @@
                 margin: 20px 0;
             }
             .job-type {
-                background: orange;
+                background: $orange;
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
                 font-size: 0.6rem;
-                color: white;
+                color: $white;
                 padding: 5px;
                 display: inline-block;
                 text-align: center;
                 vertical-align: middle;
             }
+            .location {
+                font-size: 0.8rem;
+                font-weight: 300;
+                display: block;
+                margin-bottom: .5rem;
+            }
+            .position {
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .time {
+                display: block;
+                font-size: 0.8rem;
+                font-weight: 300;
+                color: $darkGrey;
+            }
         }
     }
-    .col-md-4 {
-        width: (((100 * 4)/12) * 1%);
-        padding: 0 15px;
-        display: inline-block;
+}
+
+table {
+    width: 100%;
+    thead {
+        background: $lightGreyBG;
+        th {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 15px 10px;
+            text-align: left;
+            color: $darkGreyFont;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-top-left-radius: 5px;
+            -moz-border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            
+        }
     }
-    .col-md-3 {
-        width: (((100 * 3)/12) * 1%);
-        padding: 0 15px;
-        display: inline-block;
-    }
-    .col-md-9 {
-        width: (((100 * 9)/12) *1%);
-        padding: 0 15px;
-        display: inline-block;
+    tbody {
+        background: $white;
+        font-size: 0.8rem;
+        td {
+            padding: 20px 10px;
+            color: $darkGreyFont;
+            .logo {
+                display: inline-block;
+                background: $neonGreen;
+                padding: 15px;
+                border-radius: 50%;
+                margin-right: 20px;
+                width: 45px;
+                height: 45px;
+                color: $white;
+            }
+        }
     }
 }

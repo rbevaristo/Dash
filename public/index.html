@@ -7,135 +7,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="/css/main.css">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
-    <section id="sideMenu">
+    <aside id="sideMenu">
         <nav>
             <a href="#" class="active">
-                <i class="fa fa-home" aria-hidden="true"></i> Item
+                <i class="fa fa-home" aria-hidden="true"></i> 
+                <span> Home</span>  
             </a>
             <a href="#">
-                <i class="fa fa-sticky-note" aria-hidden="true"></i> Item
+                <i class="fa fa-sticky-note" aria-hidden="true"></i> 
+                <span> Files</span> 
             </a>
             <a href="#">
-                <i class="fa fa-bookmark" aria-hidden="true"></i> Item
+                <i class="fa fa-bookmark" aria-hidden="true"></i> 
+                <span> Bookmark</span> 
             </a>
             <a href="#">
-                <i class="fa fa-calendar-check" aria-hidden="true"></i> Item
+                <i class="fa fa-calendar-check" aria-hidden="true"></i> 
+                <span> Calendar</span> 
             </a>
             <a href="#">
-                <i class="fa fa-user-circle" aria-hidden="true"></i> Item
+                <i class="fa fa-user-circle" aria-hidden="true"></i> 
+                <span> Users</span> 
             </a>
             <a href="#">
-                <i class="fa fa-cog" aria-hidden="true"></i> Item
+                <i class="fa fa-cog" aria-hidden="true"></i> 
+                <span> Settings</span>
             </a>
         </nav>
-    </section>
+    </aside>
 
     <header>
-        <div class="search-area">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" placeholder="">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="user-area">
+                    <div class="search-area">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Search..." class="search">
+                        <span class="border"></span>
+                    </div>
+                    <a href="#" class="notification">
+                        <i class="fa fa-bell"></i>
+                        <span class="circle">3</span>
+                    </a>
+                    <a href="#">
+                        <div class="user-img"></div>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="user-area">
-            <a href="#" class="notification">
-                <i class="fa fa-bell"></i>
-                <span class="circle">3</span>
-            </a>
-            <a href="#">
-                <div class="user-img"></div>
-                <i class="fa fa-caret-down"></i>
-            </a>
-        </div>
+        
     </header>
 
     <section id="content-area">
-
-        <div class="heading">
-            <h1>Dashboard</h1>
-            <p>Welcome to MyCompany</p>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="heading">
+                    <h1>Dashboard</h1>
+                    <p>Welcome to MyCompany</p>
+                </div>
+            </div>
         </div>
 
         <div class="cards">
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="user-img"></div>
-                    <span class="user-name">
-                        Arthuria Pendragon
-                    </span>
-                    <span class="user-title">
-                        Full Stack Developer
-                    </span>
-                    <hr>
-
-                    <div class="col-md-3">
-                        <span class="education">
-                            Education
-                        </span>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="user-img"></div>
+                            <span class="user-name">
+                                Arthuria Pendragon
+                            </span>
+                            <span class="user-title">
+                                Full Stack Developer
+                            </span>
+                            <hr>
+                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                                <span class="education">
+                                    Education
+                                </span>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-8">
+                                <span class="schools">
+                                    Computer Science, Holy Angel University
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <span class="schools">
-                            Computer Science
-                        </span>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="row">
+                            <h6>Interview Schedule</h6>
+                            <span class="date">
+                                05 January 2018
+                            </span>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+                                <span class="job-type">IT</span>
+                            </div>
+                            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                                <span class="location">Web Developer</span>
+                                <span class="position">Software Developer</span>
+                                <span class="time">08:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="row">
+                            <h6>Interview Schedule</h6>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <h6>Interview Schedule</h6>
-                    <span class="date">
-                        05 January 2018
-                    </span>
-                    <div class="col-md-2">
-                        <span class="job-type">IT</span>
-                    </div>
-                    <div class="col-md-10">
-                        <span class="schools">Web Developer</span>
-                        <span class="schools">Software Developer</span>
-                        <span class="time">08:00 AM</span>
-                    </div>
-                </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Jobs</th>
+                            <th>End of Application</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="logo">RE</span> Online Shopping</td>
+                            <td>Java Developer</td>
+                            <td>December 30, 2017</td>
+                            <td>Philippines</td>
+                        </tr>
+                        <tr>
+                            <td><span class="logo">RE</span> Online Shopping</td>
+                            <td>Java Developer</td>
+                            <td>December 30, 2017</td>
+                            <td>Philippines</td>
+                        </tr>
+                        <tr>
+                            <td><span class="logo">RE</span> Online Shopping</td>
+                            <td>Java Developer</td>
+                            <td>December 30, 2017</td>
+                            <td>Philippines</td>
+                        </tr>
+                        <tr>
+                            <td><span class="logo">RE</span> Online Shopping</td>
+                            <td>Java Developer</td>
+                            <td>December 30, 2017</td>
+                            <td>Philippines</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Company</th>
-                        <th>Jobs</th>
-                        <th>End of Application</th>
-                        <th>Location</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Online Shopping</td>
-                        <td>Java Developer</td>
-                        <td>December 30, 2017</td>
-                        <td>Philippines</td>
-                    </tr>
-                    <tr>
-                        <td>Online Shopping</td>
-                        <td>Java Developer</td>
-                        <td>December 30, 2017</td>
-                        <td>Philippines</td>
-                    </tr>
-                    <tr>
-                        <td>Online Shopping</td>
-                        <td>Java Developer</td>
-                        <td>December 30, 2017</td>
-                        <td>Philippines</td>
-                    </tr>
-                    <tr>
-                        <td>Online Shopping</td>
-                        <td>Java Developer</td>
-                        <td>December 30, 2017</td>
-                        <td>Philippines</td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
     </section>
 </body>
 
